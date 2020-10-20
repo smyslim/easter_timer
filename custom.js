@@ -1,4 +1,4 @@
-/* 
+	/* 
 
 	5. Init Timer
 
@@ -32,7 +32,7 @@
         let event_day = $('.event_day');
         let event_month = $('.event_month');
         
-        let HausAlgorithm = function(easter_year){
+        let GaussAlgorithm = function(easter_year){
           a = easter_year%19;
           console.log(a);
           b = easter_year%4;
@@ -65,11 +65,11 @@
         let checkYear = function(date,target_date){
           if(date > target_date){
             easter_year++;
-            HausAlgorithm(easter_year);
+            GaussAlgorithm(easter_year);
           }
         }
         
-        HausAlgorithm(easter_year);
+        GaussAlgorithm(easter_year);
         checkYear(date,target_date);
         
         target_date = target_date.getTime();
